@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clara's Serviços e Buffet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Clara's</h1>
+                <span>serviços e buffet</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#calculator">Orçamento</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Elegância e Sabor para seu Evento</h2>
+            <p>Transforme seus momentos especiais em memórias inesquecíveis com o melhor da gastronomia e serviços.</p>
+            <a href="#calculator" class="btn-gold">Faça seu Orçamento</a>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Nossos Serviços</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Buffet Completo</h3>
+                    <p>Opções variadas de pratos quentes e frios para todos os gostos.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-cocktail"></i>
+                    <h3>Drinks Especiais</h3>
+                    <p>Bartenders profissionais e uma seleção de drinks incríveis.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-pancakes"></i>
+                    <!-- Using a generic food icon if pancakes not avail, but let's try generic -->
+                    <h3>Crepe Francês</h3>
+                    <p>Deliciosos crepes doces e salgados feitos na hora.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-child"></i>
+                    <h3>Espaço Kids</h3>
+                    <p>Diversão garantida com cama elástica, pipoca e monitores.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">O que dizem nossos clientes</h2>
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <div class="carousel-slide active">
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">"O serviço foi impecável! A comida estava deliciosa e a equipe
+                                foi super atenciosa. Recomendo muito!"</p>
+                            <p class="client-name">- Maria Silva</p>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">"Contratei para o aniversário do meu filho e foi um sucesso. O
+                                buffet infantil e a cama elástica fizeram a alegria das crianças."</p>
+                            <p class="client-name">- João Santos</p>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">"Elegância e sabor definem. Os drinks estavam perfeitos e a
+                                apresentação dos pratos foi linda."</p>
+                            <p class="client-name">- Ana Oliveira</p>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <button class="carousel-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+                <div class="carousel-dots"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="calculator" class="calculator-section">
+        <div class="container">
+            <h2 class="section-title">Calcule seu Evento</h2>
+            <div class="calculator-container">
+                <div class="calculator-form">
+                    <div class="form-group">
+                        <label for="guests">Número de Convidados:</label>
+                        <input type="number" id="guests" min="10" value="50">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Duração do Evento:</label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="duration" value="3" checked>
+                                3 Horas
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="duration" value="4">
+                                4 Horas
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Adicionais:</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="crepe" value="crepe">
+                                Estação de Crepe (+R$ 15,00/pessoa)
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="drinks" value="drinks">
+                                Open Bar de Drinks (+R$ 25,00/pessoa)
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="kids" value="kids">
+                                Buffet Infantil (+R$ 20,00/pessoa)
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="trampoline" value="trampoline">
+                                Cama Elástica (+R$ 150,00 fixo)
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="popcorn" value="popcorn">
+                                Máquina de Pipoca (+R$ 100,00 fixo)
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="calculator-result">
+                    <h3>Estimativa de Valor</h3>
+                    <div class="price-display">
+                        <span class="currency">R$</span>
+                        <span id="total-price">0,00</span>
+                    </div>
+                    <p class="note">*Valores estimados. Entre em contato para um orçamento final.</p>
+                    <button class="btn-gold full-width">Solicitar Reserva</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Clara's</h2>
+                    <p>Serviços e Buffet</p>
+                </div>
+                <div class="footer-info">
+                    <h3>Contato</h3>
+                    <p><i class="fas fa-phone"></i> (11) 99999-9999</p>
+                    <p><i class="fas fa-envelope"></i> contato@clarasbuffet.com.br</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Clara's Serviços e Buffet. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
