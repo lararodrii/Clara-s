@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clara's Serviços e Buffet</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="navbar_icon.png" alt="Clara's Buffet" class="logo-img"></a>
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="history.html">Nossa História</a></li>
+                    <li class="dropdown">
+                        <a href="#services" class="dropbtn">Serviços <i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="comidas.html">Comidas</a>
+                            <a href="bebidas.html">Bebidas</a>
+                            <a href="alugueis.html">Alugueis</a>
+                        </div>
+                    </li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="#calculator">Orçamento</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Elegância e Sabor para seu Evento</h2>
+            <p>Transforme seus momentos especiais em memórias inesquecíveis com o melhor da gastronomia e serviços.</p>
+            <a href="#calculator" class="btn-gold">Faça seu Orçamento</a>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Nossos Serviços</h2>
+            <div class="services-grid" id="comidas">
+                <div class="service-card">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Buffet Completo</h3>
+                    <p>Opções variadas de pratos quentes e frios para todos os gostos.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-stroopwafel"></i>
+                    <h3>Crepe Francês</h3>
+                    <p>Deliciosos crepes doces e salgados feitos na hora.</p>
+                </div>
+            </div>
+
+            <div class="services-grid" id="bebidas" style="margin-top: 40px;">
+                <div class="service-card">
+                    <i class="fas fa-cocktail"></i>
+                    <h3>Drinks Especiais</h3>
+                    <p>Bartenders profissionais e uma seleção de drinks incríveis.</p>
+                </div>
+            </div>
+
+            <div class="services-grid" id="alugueis" style="margin-top: 40px;">
+                <div class="service-card">
+                    <i class="fas fa-child"></i>
+                    <h3>Espaço Kids & Alugueis</h3>
+                    <p>Diversão garantida com cama elástica, pipoca e monitores.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">O que dizem nossos clientes</h2>
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <div class="carousel-slide active">
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">"O serviço foi impecável! A comida estava deliciosa e a equipe
+                                foi super atenciosa. Recomendo muito!"</p>
+                            <p class="client-name">- Maria Silva</p>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">"Contratei para o aniversário do meu filho e foi um sucesso. O
+                                buffet infantil e a cama elástica fizeram a alegria das crianças."</p>
+                            <p class="client-name">- João Santos</p>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">"Elegância e sabor definem. Os drinks estavam perfeitos e a
+                                apresentação dos pratos foi linda."</p>
+                            <p class="client-name">- Ana Oliveira</p>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <button class="carousel-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+                <div class="carousel-dots"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="calculator" class="calculator-section">
+        <div class="container">
+            <h2 class="section-title">Calcule seu Evento</h2>
+            <div class="calculator-container">
+                <div class="calculator-form">
+                    <div class="form-group">
+                        <label for="guests">Número de Convidados:</label>
+                        <input type="number" id="guests" min="10" value="50">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Duração do Evento:</label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="duration" value="3" checked>
+                                3 Horas
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="duration" value="4">
+                                4 Horas
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Adicionais:</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="crepe" value="crepe">
+                                Estação de Crepe (+R$ 15,00/pessoa)
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="drinks" value="drinks">
+                                Open Bar de Drinks (+R$ 25,00/pessoa)
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="kids" value="kids">
+                                Buffet Infantil (+R$ 20,00/pessoa)
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="trampoline" value="trampoline">
+                                Cama Elástica (+R$ 150,00 fixo)
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="popcorn" value="popcorn">
+                                Máquina de Pipoca (+R$ 100,00 fixo)
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="calculator-result">
+                    <h3>Estimativa de Valor</h3>
+                    <div class="price-display">
+                        <span class="currency">R$</span>
+                        <span id="total-price">0,00</span>
+                    </div>
+                    <p class="note">*Valores estimados. Entre em contato para um orçamento final.</p>
+                    <button class="btn-gold full-width">Solicitar Reserva</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="custom-booking" class="custom-booking-section"
+        style="padding: 60px 0; background-color: var(--primary-black);">
+        <div class="container">
+            <h2 class="section-title" style="text-align: center; margin-bottom: 40px;">Verificar Disponibilidade</h2>
+            <div class="custom-calendar-container">
+                <div class="calendar-header">
+                    <button id="prev-month"><i class="fas fa-chevron-left"></i></button>
+                    <h3 id="month-year"></h3>
+                    <button id="next-month"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="calendar-weekdays">
+                    <div>Dom</div>
+                    <div>Seg</div>
+                    <div>Ter</div>
+                    <div>Qua</div>
+                    <div>Qui</div>
+                    <div>Sex</div>
+                    <div>Sáb</div>
+                </div>
+                <div class="calendar-days" id="calendar-days">
+                    <!-- Days will be generated by JS -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Modal -->
+    <div id="booking-modal" class="modal">
+        <div class="modal-content booking-modal-content">
+            <span class="close-modal" id="close-booking-modal">&times;</span>
+            <h3>Reservar Data</h3>
+            <p id="selected-date-display"></p>
+            <form id="booking-form">
+                <input type="hidden" id="selected-date-iso" name="selectedDateISO" value="">
+
+                <div id="booking-step-1">
+                    <div class="form-group">
+                        <label for="client-name">Nome do Cliente</label>
+                        <input type="text" id="client-name" required placeholder="Seu nome completo">
+                    </div>
+                    <div class="form-group">
+                        <label for="event-location">Localização do Evento</label>
+                        <input type="text" id="event-location" required placeholder="Endereço ou Link do Google Maps">
+                        <small style="color: var(--text-gray); font-size: 0.8em;">Cole o link do Google Maps ou digite o
+                            endereço.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="event-duration">Duração do Evento</label>
+                        <select id="event-duration" required>
+                            <option value="3">3 Horas</option>
+                            <option value="4">4 Horas</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="event-time">Horário de Início</label>
+                        <input type="time" id="event-time" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Serviços Desejados:</label>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 5px;">
+                            <div><input type="checkbox" id="service-crepe" name="services" value="Crepe Francês"> <label
+                                    for="service-crepe" style="display:inline; font-weight:normal;">Crepe
+                                    Francês</label></div>
+                            <div><input type="checkbox" id="service-drinks" name="services" value="Drinks"> <label
+                                    for="service-drinks" style="display:inline; font-weight:normal;">Drinks</label>
+                            </div>
+                            <div><input type="checkbox" id="service-kids" name="services" value="Espaço Kids"> <label
+                                    for="service-kids" style="display:inline; font-weight:normal;">Espaço Kids</label>
+                            </div>
+                            <div><input type="checkbox" id="service-trampoline" name="services" value="Cama Elástica">
+                                <label for="service-trampoline" style="display:inline; font-weight:normal;">Cama
+                                    Elástica</label>
+                            </div>
+                            <div><input type="checkbox" id="service-popcorn" name="services" value="Pipoca"> <label
+                                    for="service-popcorn" style="display:inline; font-weight:normal;">Pipoca</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="availability-message" style="margin-bottom: 15px; font-weight: bold;"></div>
+                    <button type="button" id="review-booking-btn" class="btn-gold full-width">Revisar
+                        Agendamento</button>
+                </div>
+
+                <div id="booking-step-2" style="display: none;">
+                    <h4 style="color: var(--primary-gold); text-align: center; margin-bottom: 15px;">Resumo do
+                        Agendamento</h4>
+                    <div id="summary-content"
+                        style="background-color: var(--primary-black); padding: 15px; border-radius: 5px; margin-bottom: 15px; text-align: left;">
+                        <!-- Summary details will be injected here -->
+                    </div>
+                    <p style="color: red; font-weight: bold; text-align: center; margin-bottom: 15px;">Atenção: as
+                        demais etapas precisam ser realizadas pelo whatsapp, clique em salvar</p>
+                    <div style="display: flex; gap: 10px;">
+                        <button type="button" id="back-booking-btn" class="btn-gold"
+                            style="background-color: transparent; border: 1px solid var(--primary-gold); width: 30%;">Voltar</button>
+                        <button type="submit" class="btn-gold" style="width: 70%;">Concluir e Salvar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="footer_logo_new.png" alt="Clara's Buffet" class="footer-logo-img">
+                </div>
+                <div class="footer-info">
+                    <h3>Contato</h3>
+                    <p><i class="fas fa-phone"></i> 61 8260-5050</p>
+                    <p><i class="fas fa-envelope"></i> clarassbuffet@gmail.com</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/tudoprafestadf?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                            target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/people/Claras-Buffet/61557872615470/?locale=pt_BR#"
+                            target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://api.whatsapp.com/send/?phone=5561982605050&text&type=phone_number&app_absent=0&utm_source=ig"
+                            target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Clara's Serviços e Buffet. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
