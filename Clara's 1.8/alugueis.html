@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alugueis - Clara's</title>
+    <!-- 🖼️ FAVICONS: Ícones da aba do navegador -->
+    <link rel="apple-touch-icon" sizes="180x180" href="image/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="icon" href="image/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <!-- 🏠 LOGO HEADER: Ícone da barra de navegação -->
+                <a href="index.html"><img src="image/navbar_icon.png" alt="Clara's Buffet" class="logo-img"></a>
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="history.html">Nossa História</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Serviços <i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="comidas.html">Comidas</a>
+                            <a href="bebidas.html">Bebidas</a>
+                            <a href="alugueis.html">Alugueis</a>
+                        </div>
+                    </li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="index.html#calculator">Orçamento</a></li>
+                    <li><a href="index.html#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="history-page-hero">
+        <div class="container">
+            <h1 class="page-title">Alugueis e Espaço Kids</h1>
+        </div>
+    </section>
+
+    <section class="history-content-section">
+        <div class="container">
+            <div class="history-intro" style="text-align: center; margin-bottom: 50px;">
+                <h2 style="color: var(--primary-gold); font-size: 2.5rem;">Entretenimento & Estações</h2>
+                <p style="max-width: 700px; margin: 0 auto;">A divisão <strong>Up Festas</strong> fornece equipamentos
+                    novos, higienizados e com estética impecável para agregar valor visual e diversão ao seu evento.</p>
+            </div>
+
+            <div class="services-grid-clean" style="grid-template-columns: 1fr 1fr; gap: 40px;">
+                <div class="service-highlight-section" style="flex-direction: column; gap: 20px; margin-bottom: 0;">
+                    <div class="highlight-image-container" style="height: 300px;">
+                        <img src="image/algodao_doce.png" alt="Estações Retrô Pipoca" class="highlight-image">
+                    </div>
+                    <div class="highlight-text" style="text-align: center;">
+                        <h3 style="color: var(--primary-gold);">Estações Gastronômicas Retrô</h3>
+                        <p>Nossos carrinhos de Pipoca e Algodão Doce não são apenas deliciosos, são peças de decoração.
+                            Com design vintage charme, eles trazem nostalgia e um aroma irresistível para a festa.
+                            Inclui operador uniformizado.</p>
+                    </div>
+                </div>
+
+                <div class="service-highlight-section" style="flex-direction: column; gap: 20px; margin-bottom: 0;">
+                    <div class="highlight-image-container" style="height: 300px;">
+                        <img src="image/cama_elastica.png" alt="Cama Elástica e Brinquedos" class="highlight-image">
+                    </div>
+                    <div class="highlight-text" style="text-align: center;">
+                        <h3 style="color: var(--primary-gold);">Espaço Kids Seguro</h3>
+                        <p>Segurança em primeiro lugar. Nossas Camas Elásticas e Piscinas de Bolinhas possuem redes de
+                            proteção reforçadas e passam por manutenção constante. Acompanha monitor treinado para
+                            garantir a brincadeira segura.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <!-- 🦶 LOGO FOOTER: Marca d'água do rodapé -->
+                    <img src="image/footer_logo_new.png" alt="Clara's Serviços e Buffet" class="footer-logo-img">
+                </div>
+                <div class="footer-info">
+                    <h3>Contato</h3>
+                    <p><i class="fas fa-phone"></i> 61 8260-5050</p>
+                    <p><i class="fas fa-envelope"></i> clarassbuffet@gmail.com</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/tudoprafestadf?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                            target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/people/Claras-Buffet/61557872615470/?locale=pt_BR#"
+                            target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://api.whatsapp.com/send/?phone=5561982605050&text&type=phone_number&app_absent=0&utm_source=ig"
+                            target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Clara's Serviços e Buffet. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
