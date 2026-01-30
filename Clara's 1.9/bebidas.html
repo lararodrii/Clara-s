@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bebidas - Clara's</title>
+    <!-- 🖼️ FAVICONS: Ícones da aba do navegador -->
+    <link rel="apple-touch-icon" sizes="180x180" href="image/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="icon" href="image/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <!-- 🏠 LOGO HEADER: Ícone da barra de navegação -->
+                <a href="index.html"><img src="image/navbar_icon.png" alt="Clara's Buffet" class="logo-img"></a>
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="history.html">Nossa História</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Serviços <i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="comidas.html">Comidas</a>
+                            <a href="bebidas.html">Bebidas</a>
+                            <a href="alugueis.html">Alugueis</a>
+                        </div>
+                    </li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="index.html#calculator">Orçamento</a></li>
+                    <li><a href="index.html#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="history-page-hero">
+        <div class="container">
+            <h1 class="page-title">Nossas Bebidas</h1>
+        </div>
+    </section>
+
+    <section class="history-content-section">
+        <div class="container">
+            <div class="history-intro" style="text-align: center; margin-bottom: 50px;">
+                <h2 style="color: var(--primary-gold); font-size: 2.5rem;">Mixologia & Open Bar</h2>
+                <p style="max-width: 700px; margin: 0 auto;">Operação exclusiva da <strong>Up Bebidas</strong>. Uma
+                    experiência de bar completa, com bartenders performáticos, cristais selecionados e insumos de
+                    primeira linha.</p>
+            </div>
+
+            <div class="service-highlight-section" style="flex-direction: row-reverse;">
+                <div class="highlight-text">
+                    <h3 style="color: var(--primary-gold); margin-bottom: 15px;">O Bar Como Espetáculo</h3>
+                    <p>Mais do que servir bebidas, criamos um ponto de encontro. Nossos bartenders são treinados para
+                        oferecer um serviço ágil e interativo. Estruturas de bar modulares em preto e dourado que se
+                        integram perfeitamente à decoração do seu evento.</p>
+                </div>
+                <div class="highlight-image-container">
+                    <img src="https://placehold.co/600x400/111111/d4af37?text=Bartender+em+ação,+vestindo+preto,+preparando+coquetel+com+fumaça+ou+fogo,+balcão+de+bar+escuro+iluminado+por+luzes+âmbar."
+                        alt="Bartender preparando drink" class="highlight-image">
+                </div>
+            </div>
+
+            <div class="services-grid-clean">
+                <div class="service-item-clean">
+                    <img src="https://placehold.co/600x400/111111/d4af37?text=Taça+de+Gin+Tônica+com+especiarias+e+limão+siciliano,+gelo+translúcido,+fundo+preto+com+reflexos+dourados."
+                        alt="Gin Tônica" class="service-img-top">
+                    <div class="service-info-clean">
+                        <h3>Gin Tônica Premium</h3>
+                        <p>Diversas variações com botânicos frescos, especiarias e tônicas importadas.</p>
+                    </div>
+                </div>
+                <div class="service-item-clean">
+                    <img src="https://placehold.co/600x400/111111/d4af37?text=Caneca+de+cobre+suada+com+Moscow+Mule+e+espuma,+em+cima+de+balcão+de+madeira+escura,+luz+lateral."
+                        alt="Moscow Mule" class="service-img-top">
+                    <div class="service-info-clean">
+                        <h3>Moscow Mule</h3>
+                        <p>O queridinho do momento, servido na caneca de cobre tradicional com espuma de gengibre
+                            artesanal.</p>
+                    </div>
+                </div>
+                <div class="service-item-clean">
+                    <img src="https://placehold.co/600x400/111111/d4af37?text=Três+copos+de+caipifrutas+coloridas+(morango,+limão,+maracujá)+alinhados,+frutas+frescas+ao+redor,+ambiente+de+bar+noturno."
+                        alt="Caipirinhas" class="service-img-top">
+                    <div class="service-info-clean">
+                        <h3>Estação Tropical</h3>
+                        <p>Caipifrutas gourmet feitas na hora com frutas da estação selecionadas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <!-- 🦶 LOGO FOOTER: Marca d'água do rodapé -->
+                    <img src="image/footer_logo_new.png" alt="Clara's Serviços e Buffet" class="footer-logo-img">
+                </div>
+                <div class="footer-info">
+                    <h3>Contato</h3>
+                    <p><i class="fas fa-phone"></i> 61 8260-5050</p>
+                    <p><i class="fas fa-envelope"></i> clarassbuffet@gmail.com</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/tudoprafestadf?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                            target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/people/Claras-Buffet/61557872615470/?locale=pt_BR#"
+                            target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://api.whatsapp.com/send/?phone=5561982605050&text&type=phone_number&app_absent=0&utm_source=ig"
+                            target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Clara's Serviços e Buffet. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
